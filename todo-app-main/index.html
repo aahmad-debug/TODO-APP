@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <header class="header">
+    <h1>TODO</h1>
+    <img src="icons/sun.svg" alt="theme toggle" id="theme-toggle" class="icon">
+  </header>
+
+  <main class="todo-container">
+    <div class="todo-input">
+      <input type="text" id="new-todo" placeholder="Currently typing..." />
+    </div>
+
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <footer class="todo-footer">
+      <span id="items-left">0 items left</span>
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="active">Active</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+      <button id="clear-completed">Clear Completed</button>
+    </footer>
+  </main>
+
+  <p class="drag-info">Drag and drop to reorder list</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
